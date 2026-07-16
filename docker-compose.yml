@@ -1,0 +1,21 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .devcontainer/Dockerfile
+
+        image: python-basic:latest
+        container_name: python-basic
+
+        working_dir: /workspaces/python-basic
+
+        volumes:
+            - .:/workspaces/python-basic
+
+        ports:
+            - "8888:8888"
+
+        command: sleep infinity
+
+        tty: true
+        stdin_open: true

@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+jupyterlab
+ipykernel
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+openpyxl
+requests
+python-multipart
