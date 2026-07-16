@@ -4,6 +4,8 @@
     "service": "app",
     "workspaceFolder": "/workspaces/python-basic",
     "shutdownAction": "stopCompose",
+    // 👇 ここに options を追加して、Docker Compose経由で起動するコンテナにDNS 8.8.8.8 を強制指定します
+    "options": "--dns=8.8.8.8",
     "forwardPorts": [
         8888
     ],
